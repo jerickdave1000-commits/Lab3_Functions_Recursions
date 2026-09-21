@@ -13,5 +13,5 @@ def assign_grade(avg):
         return "F"
 
 def generate_remark(grade):
-    remarks = ("A": "Excellent Performance","B": "Good Performance", "C": "Satisfactory Performance","D": "Needs Improvement","F": "Failing Status")
+    remarks = {"A": "Excellent Performance","B": "Good Performance", "C": "Satisfactory Performance","D": "Needs Improvement","F": "Failing Status"}
     return remarks.get(grade, "Invalid Grade")
